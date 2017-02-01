@@ -2,7 +2,9 @@
 Somewhere between a basic jQuery enhanced page and a full-blown Angular website lives a area that jquery-components hopes to fill.
 For those that want to roll their own SPA website and just want an easier way to make resuable bits of functionality, jquery-components might be for you.
 
-This project is still in **Alpha** stage right now, but I wanted to get the code out there early. Please forgive the mess.
+## Project Status
+
+**Alpha**. Right now this is just a proof of concept. I don't have a need for this at the moment and so the project will likely stay dormant until that need arises.
 
 # Background
 The patterns used in `jquery-components` are similar to the component support in KnockoutJS.
@@ -71,8 +73,6 @@ The patterns used in `jquery-components` are similar to the component support in
 ```
 
 Components are registered using the `$.components.register` function and a template and view model are specified. Then using the `$().component()` function on a host element, the template is cloned, passed to a new view model instance, and then injected into the DOM.
-
-More documentation to come.
 
 ## License
 
