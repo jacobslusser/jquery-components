@@ -49,7 +49,9 @@ The patterns used in `jquery-components` are similar to the component support in
 
             // Within the component, do any jQuery you want.
             $el.click(function () {
-                // Bind the '#component' div to component 2
+                // Bind the '#component' div to component 2. This will cause jquery-components
+                // to remove 'comp1' from the DOM, clone template 'comp2', pass it to a new instance
+                // of Comp2 view model, and inject it into the DOM.
                 $('#component').component('comp2');
             });
         }
@@ -64,7 +66,8 @@ The patterns used in `jquery-components` are similar to the component support in
             template: { selector: '#comp2' }
         });
 
-        // Bind component 1
+        // Bind component 1. This will cause jquery-components to clone template 'comp1', pass it
+        // to a new instance of the Comp1 view model, and inject it into the DOM.
         $('#component').component('comp1');
 
     </script>
